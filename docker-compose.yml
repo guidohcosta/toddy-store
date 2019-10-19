@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+  toddy-store:
+    command:
+      - /bin/sh
+      - -c
+      - |
+        cron
+        bundle exec whenever --set environment=${RAILS_ENV} --update-crontab
+        rm -rf tmp/pids
+        bundle exec rake db:migrate
+        bundle exec rails s -p ${RAILS_PORT} -b ${RAILS_BIND}
+    env_file:
+      - '.env'
+    ports:
+      - "${RAILS_PORT}:${RAILS_PORT}"
+
+networks:
+  default:
+    external:
+      name: toddy-store-default
