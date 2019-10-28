@@ -15,7 +15,7 @@ jobs:
         ruby-version: 2.5.x
     - name: Build and test with Rake
       run: |
-        gem install bundler
+        gem install bundler:1.16.6
         bundle install --jobs 4 --retry 3
         RAILS_ENV=test bundle exec rails db:test:prepare
         bundle exec rspec -fdoc
