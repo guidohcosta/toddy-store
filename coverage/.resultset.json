@@ -1,0 +1,64 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/toddy-store/app/channels/application_cable/channel.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/toddy-store/app/channels/application_cable/connection.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/toddy-store/app/controllers/products_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/toddy-store/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
+      "/toddy-store/app/jobs/application_job.rb": [
+        1,
+        null
+      ],
+      "/toddy-store/app/mailers/application_mailer.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/toddy-store/app/models/product.rb": [
+        1,
+        1,
+        null
+      ],
+      "/toddy-store/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/toddy-store/app/serializers/product_serializer.rb": [
+        1,
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1572220978
+  }
+}
