@@ -6,5 +6,5 @@ jobs:
     steps:
       - checkout
       - run: bundle install --path vendor/bundle
-      - run: RAILS_ENV=test rails db:test:prepare
-      - run: rspec -fdoc
+      - run: RAILS_ENV=test bundle exec rails db:test:prepare
+      - run: bundle exec rspec -fdoc
